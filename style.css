@@ -1,0 +1,599 @@
+@font-face {
+    font-family: 'Khodijah';
+    src: url("assets/fonts/Khodijah\ Free.ttf") format('truetype');
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', arial;
+    scroll-behavior: smooth;
+
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#000000, #636b8a, #1b1c20);
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+header .logo {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.8em;
+   
+    letter-spacing: 2px;
+}
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover{
+    background: #fff;
+    color: #2b1055;
+}
+section{
+    position: relative;
+    width: 100% ;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to top,#D99652, #D99652,transparent);
+    z-index: 1000;
+}
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#moon{
+    mix-blend-mode: screen;
+}
+section img#mountains_front{
+    z-index: 10;
+
+}
+#text{
+    right: -360px;
+    position: absolute;
+    color: #BC5E38;
+    white-space: nowrap;
+    font-size: 5.5vw;
+    font-family: 'Khodijah', arial;
+    
+}
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    transform: translateY(100px);
+}
+.btn:hover{
+    background-color: transparent;
+    cursor: auto;
+}
+
+/*About*/
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3f2fd;
+}
+
+/*Sejarah Terbentuknya*/
+.sejarah{
+    height: 100vh;
+    width: 100%;
+    padding: 50px;
+    background-color: #D99652;
+}
+.textSejarah{
+    font-size: 30px;
+    font-family: 'Poppins',arial;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.fotoKhalifah{
+   text-align: center;
+}
+
+.fotoKhalifah img{
+    width: 400px;
+    height: 200px;
+ }
+
+ .paragrafKhalifah{
+    margin-top: 20px;
+ }
+
+ .paragrafKhalifah .paragrafOne{
+    text-align: justify;
+    text-indent: 0.5in;
+ }
+
+ .paragrafKhalifah .paragrafTwo{
+    text-align: justify;
+    text-indent: 0.5in;
+    margin-top: 15px;
+ }
+
+ 
+
+/*Abu Bakar*/
+
+.AbuBakar{
+    height: 150vh;
+    width: 100%;
+    background-color: #DD9F5F;
+}
+
+.AbuBakar h2{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.AbuBakar img{
+    text-align: start;
+    padding-top: 28px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 28px;
+    width: 210px;
+    height: 210px;
+    position: absolute;
+}
+.AbuBakar .deskripsiAbuBakar{
+    font-size: 15px;
+    padding-top: 70px;
+    padding-left: 210px;
+    text-align: justify;
+    text-indent: 0.5in;
+    padding-right: 15px;
+    
+}
+
+
+.AbuBakar .boxPertama{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 50px;
+    width: 42%;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #D48635;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.AbuBakar .boxKedua{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 53%;
+    width: 42%;
+    height: 500px;
+    overflow-y: auto;
+    border-radius: 10px;
+    background-color: #D48635;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.AbuBakar .boxPertama h2{
+    font-size: 24px;
+}
+
+.AbuBakar .boxPertama p{
+    padding: 20px;
+    
+    text-align: center;
+    font-size: 15px;
+    text-indent: 0.5in;
+    text-align: justify;
+}
+
+.AbuBakar .boxKedua h2{
+    font-size: 20px;
+}
+
+.AbuBakar .boxKedua  ol li{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 13px;
+    text-align: justify;
+}
+
+.AbuBakar .boxKedua  ol {
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+/*Umar Bin Khattab*/
+.UmarBinKhattab{
+    height: 150vh;
+    width: 100%;
+    background-color: #E4A666;
+}
+
+.UmarBinKhattab h2{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.UmarBinKhattab img{
+    text-align: start;
+    padding-top: 28px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 28px;
+    width: 240px;
+    height: 210px;
+    position: absolute;
+}
+.UmarBinKhattab .deskripsiUmar{
+    font-size: 15px;
+    padding-top: 40px;
+    padding-left: 220px;
+    text-align: justify;
+    text-indent: 0.5in;
+    padding-right: 15px;
+    
+}
+
+
+.UmarBinKhattab .boxPertama{
+    overflow-y: auto;
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 50px;
+    width: 42%;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #D48635;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.UmarBinKhattab .boxKedua{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 53%;
+    width: 42%;
+    height: 500px;
+    overflow-y: auto;
+    border-radius: 10px;
+    background-color: #D48635;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.UmarBinKhattab .boxPertama h2{
+    font-size: 24px;
+}
+
+.UmarBinKhattab .boxPertama p{
+    padding: 20px;
+    
+    text-align: center;
+    font-size: 15px;
+    text-indent: 0.5in;
+    text-align: justify;
+}
+
+.UmarBinKhattab .boxKedua h2{
+    font-size: 20px;
+    
+}
+
+.UmarBinKhattab .boxKedua  ol li{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 13px;
+    text-align: justify;
+}
+
+.UmarBinKhattab .boxKedua  ol {
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+/*Ustman Bin Affan*/
+.UstmanBinAffan{
+    height: 150vh;
+    width: 100%;
+    background-color: #E7AD67;
+}
+
+.UstmanBinAffan h2{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.UstmanBinAffan img{
+    text-align: start;
+    padding-top: 28px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 28px;
+    width: 280px;
+    height: 210px;
+    position: absolute;
+}
+.UstmanBinAffan .deskripsiUtsman{
+    font-size: 15px;
+    padding-top: 40px;
+    padding-left: 230px;
+    text-align: justify;
+    text-indent: 0.5in;
+    padding-right: 15px;
+    
+}
+
+
+.UstmanBinAffan .boxPertama{
+    overflow-y: auto;
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 50px;
+    width: 42%;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #D48635;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.UstmanBinAffan .boxKedua{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 53%;
+    width: 42%;
+    height: 500px;
+    overflow-y: auto;
+    border-radius: 10px;
+    background-color: #D48635;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.UstmanBinAffan .boxPertama h2{
+    font-size: 24px;
+}
+
+.UstmanBinAffan .boxPertama p{
+    padding: 20px;
+    
+    text-align: center;
+    font-size: 15px;
+    text-indent: 0.5in;
+    text-align: justify;
+}
+
+.UstmanBinAffan .boxKedua h2{
+    font-size: 20px;
+}
+
+.UstmanBinAffan .boxKedua  ol li{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 13px;
+    text-align: justify;
+}
+
+.UstmanBinAffan .boxKedua  ol {
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+
+/*Ali Bin Abi Thalib*/
+.AliBinAbiThalib{
+    height: 150vh;
+    width: 100%;
+    background-color: #EEB470;
+}
+
+.AliBinAbiThalib h2{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.AliBinAbiThalib img{
+    text-align: start;
+    padding-top: 28px;
+    padding-left: 28px;
+    margin-left: 30px;
+    padding-right: 28px;
+    padding-bottom: 28px;
+    width: 200px;
+    height: 220px;
+    position: absolute;
+}
+.AliBinAbiThalib .deskripsiAli{
+    font-size: 15px;
+    padding-top: 40px;
+    padding-left: 230px;
+    text-align: justify;
+    text-indent: 0.5in;
+    padding-right: 15px;
+    
+}
+
+
+.AliBinAbiThalib .boxPertama{
+    overflow-y: auto;
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 50px;
+    width: 42%;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #D48635;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.AliBinAbiThalib .boxKedua{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 53%;
+    width: 42%;
+    height: 500px;
+    overflow-y: auto;
+    border-radius: 10px;
+    background-color: #D48635;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.AliBinAbiThalib .boxPertama h2{
+    font-size: 24px;
+}
+
+.AliBinAbiThalib .boxPertama p{
+    padding: 20px;
+    
+    text-align: center;
+    font-size: 15px;
+    text-indent: 0.5in;
+    text-align: justify;
+}
+
+.AliBinAbiThalib .boxKedua h2{
+    font-size: 20px;
+}
+
+.AliBinAbiThalib .boxKedua  ol li{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 13px;
+    text-align: justify;
+}
+
+.AliBinAbiThalib .boxKedua  ol {
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+.kemajuanPeradaban{
+    height: 104vh;
+    width: 100%;
+    background-color: #F4BC78;
+}
+
+.kemajuanPeradaban h2{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.kemajuanPeradaban ul{
+    text-align: center;
+    padding: 30px;
+}
+
+.kemajuanPeradaban li{
+    text-align: center;
+    padding: 10px;
+    text-align: justify;
+}
+
+
+
+
+
+/* swiper button css */
+.nav-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transform: translateY(30px);
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+.nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.nav-btn::after,
+.nav-btn::before {
+    font-size: 20px;
+    color: #fff;
+}
+.swiper-pagination-bullet {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.swiper-pagination-bullet-active {
+    background-color: #4070f4;
+}
+@media screen and (max-width: 768px) {
+    .slide p {
+      padding: 0 20px;
+    }
+    .nav-btn {
+      display: none;
+    }
+}
+   
